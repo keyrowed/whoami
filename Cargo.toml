@@ -2,8 +2,13 @@
 name = "whoami"
 version = "0.1.0"
 edition = "2024"
+default-run = "wai"
 
 [dependencies]
 argh = "0.1.13"
 argon2 = "0.5.3"
 password-hash = {version = "0.5.0", features = ["getrandom"]}
+
+[[bin]]
+name = "wai"
+path = "src/main.rs"
